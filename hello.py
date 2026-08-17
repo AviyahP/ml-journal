@@ -1,0 +1,1 @@
+print("Aviyah, MD/PhD - session 1 of becoming technical.")
