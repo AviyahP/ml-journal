@@ -5,7 +5,10 @@ with open("book.txt") as f:
 # Lowercase and split into words
 words = text.lower().split()
 # Strip panctuation from each word
-words = [w.strip(".,;:!?\"'()") for w in words]
+PUNCT = ".,;:!?\"'()[]—_-*"
+stripped = (w.strip(PUNCT) for w in words)
+words = [w for w in stripped if w]
+#words = [w.strip(PUNCT) for w in words if w.strip(PUNCT)]
 # Count int a dict
 word_count = {}
 for w in words:
