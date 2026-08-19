@@ -18,3 +18,13 @@ for w in words:
 I didn't find one. tried:
 word_count = {w : word_count.get(w, 0)+ 1 for w in words}
 but it failed miserably - gave every word the count 1.....
+This:
+print(f"{i}: The word {top10[i][0]} appears {top10[i][1]} times.") for i in range(10)
+also failed miserably. there is something I dont get. 
+
+## 2026-08-19 - S5
+1 - what is a vector?
+a vector has multiple definitions that all work together - in geometry it is an arrow with direction and size starting at the origin. in computer science it can be represented by an ordered array of numbers (the coordinates). in mathematics the things that define a vector is that it can be added with other vertors and multiplied by scalars (??)
+2 - what is span, and what does it mean for a vector to be "wasted"?
+A span is the collection of all vectors that can be described as a linear combination (addtion of scalar multiplication) of the basis vectors. two non linearly dependent vectors span THE 2D plane if they are 2D vectors, A plane in 3D if they are 3D vectors. 3 2D vectors are for sure a redundant basis - at least one can be described as a lineaer combination of the others. 3 non linearly dependent 3D vectors span the 3D space. a wasted vector - a vector that is linearly dependent on the other vectors in the basis therefor does not expand the span. 
+3 - what is still fuzzy - I must say that it is hard for my to visualize and grasp how any two 2D non lineraly dependetn vector span the entire plane. I can calcular what the scalars need be algerbraically but I have trouble grasping it geometrically especially if they are non perperdicular. Same thing when we move to 3D - hard for me to understand why two independent vectors will draw one plane and not another. whould love to reach a level where all these concepts sit intuitively in my head and I REALLY understand them and never forget again.... 
